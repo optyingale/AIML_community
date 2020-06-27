@@ -35,7 +35,7 @@ def load_config(model_ord):
 def load_model(model_id, sess, model_dir=MODEL_DIR):
     model_ord = model_id_to_ord(model_id)  # <-- 3
     model_cfg = load_config(model_ord)
-    print(model_cfg)
+    # print(model_cfg) # usually -> {'output_stride': 16, 'checkpoint_name': 'mobilenet_v1_101'}
     model_path = os.path.join(model_dir, 'model-%s.pb' % model_cfg['checkpoint_name'])
     if not os.path.exists(model_path):
         print('Cannot find model file %s, converting from tfjs...' % model_path)

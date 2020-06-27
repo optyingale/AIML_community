@@ -34,6 +34,12 @@ def main():
 
         start = time.time()
         frame_count = 0
+        # print(posenet.PART_CHANNELS) # given below
+        # #24 points['left_face', 'right_face', 'right_upper_leg_front', 'right_lower_leg_back', 'right_upper_leg_back',
+        # 'left_lower_leg_front', 'left_upper_leg_front', 'left_upper_leg_back', 'left_lower_leg_back', 'right_feet',
+        # 'right_lower_leg_front', 'left_feet', 'torso_front', 'torso_back', 'right_upper_arm_front',
+        # 'right_upper_arm_back', 'right_lower_arm_back', 'left_lower_arm_front', 'left_upper_arm_front',
+        # 'left_upper_arm_back', 'left_lower_arm_back', 'right_hand', 'right_lower_arm_front', 'left_hand']
         while True:
             input_image, display_image, output_scale = posenet.read_cap(
                 cap, scale_factor=args.scale_factor, output_stride=output_stride)
@@ -61,11 +67,17 @@ def main():
                 min_pose_score=0.15, min_part_score=0.3)
             # setting min_pose_score and min_part_score =0 prints the estimated value
 
+            # print(cap.get(cv2.CAP_PROP_FPS))
+            # zipped = list(zip(posenet.PART_CHANNELS, keypoint_coords[0]))
+            # print(zipped)
+            # print(keypoint_coords[0])
+
             cv2.imshow('posenet', overlay_image)
             frame_count += 1
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
+        # print(cap.get(cv2.CAP_PROP_FPS)) -> frame rate
         print('Average FPS: ', frame_count / (time.time() - start))
 
 
