@@ -10,8 +10,8 @@ After pulling data from this repo to create a csv of your data,
 
 # Log
 June 28:
-- Created notebook to read videos from [data](data)  (https://github.com/optyingale/AIML_community/tree/master/Deep%20Learning%20Fall%20Detection/Final/data) folder and create [entire_data.csv](https://github.com/optyingale/AIML_community/blob/master/Deep%20Learning%20Fall%20Detection/Final%20Project/entire_data.csv) with the skeleton points along with frame number and action
+- Created notebook to read videos from [data](data) folder and create [entire_data.csv](entire_data.csv) with the skeleton points along with frame number and action
 
 July 4:
-- Created notebook to read data from [entire_data.csv](https://github.com/optyingale/AIML_community/blob/master/Deep%20Learning%20Fall%20Detection/Final%20Project/entire_data.csv) and transform it into standard format for machine learning [cumulative.csv](https://github.com/optyingale/AIML_community/blob/master/Deep%20Learning%20Fall%20Detection/Final%20Project/cumulative.csv)
+- Created notebook to read data from [entire_data.csv](entire_data.csv) and transform it into standard format for machine learning [cumulative.csv](cumulative.csv)
 
