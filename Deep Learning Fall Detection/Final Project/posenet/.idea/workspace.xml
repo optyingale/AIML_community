@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f495b2e5-7db1-48dc-8c48-da85208136f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../COVID-19 Analytics/.ipynb_checkpoints/Week 1 and 2 Assignment-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../COVID-19 Analytics/.ipynb_checkpoints/Week 1 and 2 Assignment-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../COVID-19 Analytics/Week 1 and 2 Assignment.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../COVID-19 Analytics/Week 1 and 2 Assignment.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../COVID-19 Analytics/covid-19-website-daily" beforeDir="false" afterPath="$PROJECT_DIR$/../../../COVID-19 Analytics/covid-19-website-daily" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week 3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/Week 4 part 2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 4 part 2.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
