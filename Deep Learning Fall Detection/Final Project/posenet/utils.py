@@ -25,7 +25,11 @@ def _process_input(source_img, scale_factor=1.0, output_stride=16):
 
 def read_cap(cap, scale_factor=1.0, output_stride=16):
     res, img = cap.read()
+    # Remove below line if its flippin
+    # img = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
     if not res:
+        cap.release()
+        cv2.destroyAllWindows()
         raise IOError("webcam failure or video has ended")
     return _process_input(img, scale_factor, output_stride)
 

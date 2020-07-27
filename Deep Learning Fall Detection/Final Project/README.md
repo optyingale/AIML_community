@@ -10,8 +10,15 @@ After pulling data from this repo to create a csv of your data,
 
 # Log
 June 28:
-- Created notebook to read videos from [data](data) folder and create [entire_data.csv](entire_data.csv) with the skeleton points along with frame number and action
+- Created notebook (Week 3) to read videos from [data](data) folder and create [entire_data.csv](entire_data.csv) with the skeleton points along with frame number and action
 
 July 4:
-- Created notebook to read data from [entire_data.csv](entire_data.csv) and transform it into standard format for machine learning [cumulative.csv](cumulative.csv)
+- Created notebook (Week 4 part 1) to read data from [entire_data.csv](entire_data.csv) and transform it into standard format for machine learning [cumulative.csv](cumulative.csv)
 
+July 15:
+- Created noteook (Week 4 part 2) where Random Forest Classifier is used as benchmark for development of Deep Learning models. 
+    - ANN model (activations used : relu and Softmax)
+        - Input ( 1024 )
+        - Hidden ( BatchNormalizaion, 720, Dropout(0.5), 480, 360 )
+        - Output ( 6 )
+    
