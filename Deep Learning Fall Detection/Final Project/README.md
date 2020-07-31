@@ -1,12 +1,15 @@
-# Will update this as the there is progress in the project
+# Fall Prediction using Deep Learning using Posenet
 
 The [posenet git repo](https://github.com/rwightman/posenet-python)<br>
 
 # Usage:
-After pulling data from this repo to create a csv of your data,
-1. Replace existing videos from "Data" folder
-1. Optionally - delete "entire_data.csv" in the root directory, or your data will just be appended to it after running "Week 3.ipynb"
-1. Similarly you may choose to delete "cumulative.csv" in the root directory. The "Week 4.ipynb" will read from "entire_data.csv" and prepare it for Machine Learning
+After pulling from this repo
+1. pip install -r requirements.txt
+1. (Optional) 
+    1. Replace or add videos in "data" folder
+    1. Delete "Cumulative.csv" and "entire_data.csv"1
+    1. run => python pipeline.py
+1. Run all cells in "Live Prediction Trial.ipynb"
 
 # Log
 June 28:
@@ -16,9 +19,11 @@ July 4:
 - Created notebook (Week 4 part 1) to read data from [entire_data.csv](entire_data.csv) and transform it into standard format for machine learning [cumulative.csv](cumulative.csv)
 
 July 15:
-- Created noteook (Week 4 part 2) where Random Forest Classifier is used as benchmark for development of Deep Learning models. 
-    - ANN model (activations used : relu and Softmax)
-        - Input ( 1024 )
-        - Hidden ( BatchNormalizaion, 720, Dropout(0.5), 480, 360 )
-        - Output ( 6 )
-    
+- Created noteook (Week 4 part 2) where Random Forest Classifier is used as benchmark for development of Deep Learning models.
+- Added ANN model (more details in the notebook)
+
+July 26:
+- Updated noteook (Week 4 part 2) added CNN, RNN and LSTM.
+
+July 31:
+- Updated file with pipeline.py to create csv and replace existing Deep Learning models 
